@@ -1,4 +1,5 @@
 using Blogging_Platform_Backend.Data;
+using Blogging_Platform_Backend.Extentions;
 using Blogging_Platform_Backend.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -26,7 +27,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddIdentity<UserApp, IdentityRole>().AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
-
+builder.Services.AddCustomJwtAuth(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
