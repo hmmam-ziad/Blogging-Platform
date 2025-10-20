@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Blogging_Platform_Backend.DTOModels
+namespace Blogging_Platform_Backend.DTOModels.User
 {
     public class dtoLogin
     {

@@ -1,4 +1,4 @@
-﻿using Blogging_Platform_Backend.DTOModels;
+﻿using Blogging_Platform_Backend.DTOModels.User;
 using Blogging_Platform_Backend.Models;
 using Blogging_Platform_Backend.Services;
 using Microsoft.AspNetCore.Identity;
